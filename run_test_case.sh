@@ -3,7 +3,7 @@
 # Running test
 
 # Path to Unity command
-UNITY_CMD_PATH=/Applications/Unity_v500f4/Unity.app/Contents/MacOS/Unity
+UNITY_CMD_PATH=/Applications/Unity/Unity.app/Contents/MacOS/Unity
 UNITY_PROJECT_PATH=$(pwd)/test-project/
 UNITY_EDITOR_LOG=~/Library/Logs/Unity/Editor.log
 OUTPUT_DIR=$(pwd)/_output/
