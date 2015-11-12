@@ -105,15 +105,13 @@ namespace Build
 					return BuildTarget.Android;
 				case "ios":
 				case "iphone":
-					return BuildTarget.iOS;
+					return BuildTarget.iPhone;
 				case "web":
 				case "webplayer":
 					return BuildTarget.WebPlayer;
 				case "webstreamed":
 				case "webplayerstreamed":
 					return BuildTarget.WebPlayerStreamed;
-				case "webgl":
-					return BuildTarget.WebGL;
 				case "win":
 				case "standalonewindows":
 					return BuildTarget.StandaloneWindows;
@@ -132,8 +130,8 @@ namespace Build
 				case BuildTarget.Android:
 					return BuildTargetGroup.Android;
 
-				case BuildTarget.iOS:
-					return BuildTargetGroup.iOS;
+				case BuildTarget.iPhone:
+					return BuildTargetGroup.iPhone;
 
 				case BuildTarget.StandaloneWindows:
 				case BuildTarget.StandaloneWindows64:
@@ -143,9 +141,6 @@ namespace Build
 				case BuildTarget.WebPlayer:
 				case BuildTarget.WebPlayerStreamed:
 					return BuildTargetGroup.WebPlayer;
-
-				case BuildTarget.WebGL:
-					return BuildTargetGroup.WebGL;
 			}
 
 			return BuildTargetGroup.Unknown;
